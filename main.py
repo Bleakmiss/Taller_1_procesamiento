@@ -24,7 +24,7 @@ if __name__ == '__main__':
     cv2.waitKey(0)
 
     # INCISO E
-    h= int(input("Ingrese el valor del Hue que desea: ")) # Valor de H que ingresa el usuario
+    h= int(input("Ingrese el valor del Hue que desea (El rango de Hue es de 0 hasta 179): ")) # Valor de H que ingresa el usuario
     imagen_hsv=imagen.colorize(h) # Uso de metodo para obtener version de la imagen con H ingresado por el usuario
     cv2.imshow("Imagen con el h dado", imagen_hsv) # Visualizacion de imagen con H ingresado
     cv2.waitKey(0)
